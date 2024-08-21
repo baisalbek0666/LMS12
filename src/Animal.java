@@ -1,2 +1,23 @@
-package PACKAGE_NAME;public class Animal {
+public abstract class Animal {
+    private double weight;
+    private int age;
+    private String gender;
+    private String nickName;
+
+    public Animal(double weight, int age, String gender, String nickName) {
+        this.weight = weight;
+        this.age = age;
+        this.gender = gender;
+        this.nickName = nickName;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "weight=" + weight +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", nickName='" + nickName + '\'' +
+                '}';
+    }
 }
